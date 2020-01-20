@@ -328,6 +328,14 @@ module BunnyMock
       nil
     end
 
+    # Defines a handler for uncaught exceptions in consumers
+    # (e.g. delivered message handlers).
+    #
+    # @api public
+    def on_uncaught_exception(&block)
+      # Don't really work. Added for api compatibility.
+    end
+
     # @endgroup
 
     #
